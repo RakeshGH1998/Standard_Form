@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <div>
+        <img src="shop5.jpg" alt="logo" height="80px" width="80px">
+    </div>
+    <form action="message.html">
+       <marquee behavior="alternate" direction="right">
+        <h1>Student Registration Details</h1>
+       </marquee>
+        <fieldset>
+            <legend>Personal Details</legend>
+            <label for="fname">First Name :</label>
+            <input type="text" id="fname" required placeholder="Ex Rakesh"> <br><br>
+            <label for="lname">Last Name :</label>
+            <input type="text" id="lname" required placeholder="Ex G H"> <br><br>
+            <label for="age">Age :</label>
+            <input type="text" id="age" required placeholder="18-35"> <br><br>
+            <label for="dob">Date of Birth :</label>
+            <input type="date" id="dob"> <br><br>
+            <label for="email">Email</label>
+            <input type="email" id="email" required placeholder="xyz@gmail.com"><br><br>
+            <label for="phone">Phone No:</label>
+            <input type="text" id="phone" required placeholder="+917338229323" pattern="[+91]{3}[0-9]{10}">
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Education Details</legend>
+            <label for="">Department :</label> <br>
+            <input type="radio" id="cs" name="dept">
+            <label for="cs">CS</label>
+            <input type="radio" id="mca" name="dept">
+            <label for="mca">MCA</label>
+            <input type="radio" id="mech" name="dept">
+            <label for="mech">MECH</label>
+            <input type="radio" id="mtech" name="dept">
+            <label for="mtech">M TECH</label> <br><br>
+
+            <label for="">Year of Passing :</label>
+            <input list="grop">
+            <datalist id="grop">
+                <option>2020</option>
+                <option>2021</option>
+                <option>2022</option>
+                <option>2023</option>
+                <option>2024</option>
+            </datalist> <br><br>
+            <label for="">Skills :</label><br>
+            <input type="checkbox" id="java">
+            <label for="java">JAVA</label><br>
+            <input type="checkbox" id="sql">
+            <label for="sql">SQL</label><br>
+            <input type="checkbox" id="html">
+            <label for="html">HTML</label><br>
+            <input type="checkbox" id="css">
+            <label for="css">CSS</label><br><br>
+             <label for="Country">Country :</label>
+             <select  id="Country">
+                <option value="">India</option>
+                <option value="">UAE</option>
+                <option value="">USA</option>
+                <option value="">Russia</option>
+                <option value="">Iran</option>
+                <option value="">China</option>
+             </select> <br><br>
+             <label for="cv">Uplode CV</label>
+             <input type="file" id="cv">
+        </fieldset> <br><br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+
+    </form>
+</body>
+</html>
